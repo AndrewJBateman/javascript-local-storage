@@ -1,6 +1,6 @@
 html {
       box-sizing: border-box;
-      background: url('http://wes.io/hx9M/oh-la-la.jpg') center no-repeat;
+      background: url('./plate.jpg') center no-repeat;
       background-size: cover;
       min-height: 100vh;
       display: flex;
@@ -77,3 +77,4 @@ html {
       outline: 0;
       border: 1px solid rgba(0,0,0,0.1);
     }
+    
