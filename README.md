@@ -1,38 +1,41 @@
-# Javascript30 Local Storage
+# :zap: Javascript30 Local Storage
 
 * Wes Bos Youtube Tutorial: [How LocalStorage and Event Delegation work. #JavaScript30 15/30](https://www.youtube.com/watch?v=YL1F4dCUlLc&index=15&list=PLu8EoSxDXHP6CGK4YVJhL_VWetA865GOH).
 
 *** Note: to open web links in a new window use: _ctrl+click on link_**
 
-## Table of contents
+## :page_facing_up: Table of contents
 
-* [General info](#general-info)
-* [Screenshots](#screenshots)
-* [Technologies](#technologies)
-* [Setup](#setup)
-* [Features](#features)
-* [Status](#status)
-* [Inspiration](#inspiration)
-* [Contact](#contact)
+* [:zap: Javascript30 Local Storage](#zap-javascript30-local-storage)
+  * [:page_facing_up: Table of contents](#page_facing_up-table-of-contents)
+  * [:books: General info](#books-general-info)
+  * [:camera: Screenshots](#camera-screenshots)
+  * [:signal_strength: Technologies](#signal_strength-technologies)
+  * [:floppy_disk: Setup](#floppy_disk-setup)
+  * [:computer: Code Examples](#computer-code-examples)
+  * [:cool: Features](#cool-features)
+  * [:clipboard: Status & To-Do List](#clipboard-status--to-do-list)
+  * [:clap: Inspiration](#clap-inspiration)
+  * [:envelope: Contact](#envelope-contact)
 
-## General info
+## :books: General info
 
 * Tutorial using a restaurant menu list to explain how HTML local storage works using key-value strings.
 
-## Screenshots
+## :camera: Screenshots
 
 ![Example screenshot](./img/storage.png).
 
-## Technologies
+## :signal_strength: Technologies
 
 * [Javascript v1.9 ECMA-262 ECMAScript 2018](http://www.ecma-international.org/publications/standards/Ecma-262.htm)
 * [HTML local storage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
 
-## Setup
+## :floppy_disk: Setup
 
 * Open index.html in browser. If any code is changed the browser needs to be refreshed.
 
-## Code Examples
+## :computer: Code Examples
 
 * Code to add item to local storage
 
@@ -45,30 +48,29 @@ function addItem(e) {
     text,
     done: false
   };
-  
+
   items.push(item);
   populateList(items, itemsList); //run this function to add items to the plates list.
-  
+
   // add to local storage using setItem and JSON.stringify to change object to a string.
   localStorage.setItem('items', JSON.stringify(items));
   this.reset();
 }
 ```
 
-## Features
+## :cool: Features
 
 * Uses HTML local storage so items not lost in the event of a page refresh etc.
 
-## Status & To-Do List
+## :clipboard: Status & To-Do List
 
 * Status: Working. Updated to work from browser, not from Glitch.
-
 * To-Do: This code can be enhanced with an option to set as 'done' or clear all items in the plates list.
 
-## Inspiration
+## :clap: Inspiration
 
 * Wes Bos Youtube Tutorial: [How LocalStorage and Event Delegation work. #JavaScript30 15/30](https://www.youtube.com/watch?v=YL1F4dCUlLc&index=15&list=PLu8EoSxDXHP6CGK4YVJhL_VWetA865GOH)
 
-## Contact
+## :envelope: Contact
 
-Repo created by [ABateman](https://www.andrewbateman.org) - feel free to contact me!
+* Repo created by [ABateman](https://www.andrewbateman.org) - you are welcome to [send me a message](https://andrewbateman.org/contact)
